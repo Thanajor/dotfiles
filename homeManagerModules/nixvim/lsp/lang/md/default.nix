@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./markdown-preview.nix
+  ];
+}
