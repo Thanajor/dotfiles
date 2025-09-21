@@ -5,6 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
+    niri.url = "github:sodiboo/niri-flake";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -67,6 +69,7 @@
       modules = [
         ./hosts/leviatan/configuration.nix
         inputs.stylix.nixosModules.stylix
+		inputs.niri.nixosModules.niri
       ];
     };
 
